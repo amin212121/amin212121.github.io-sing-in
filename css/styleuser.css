@@ -1,0 +1,70 @@
+body {
+	font-family: sans-serif;	
+}
+
+.NameSur {
+
+    font-weight: bold;
+font-size: 24px;	
+}
+
+.col-4, .col-8 {
+	border-right: 1px solid #f4f6f9;
+}
+.col-4 {
+border-left: 1px solid #f4f6f9;
+}
+.row {
+	border-top: 1px solid #f4f6f9;
+	border-bottom: 1px solid #f4f6f9;
+	margin: 45px 0px 0px 0px;
+}
+
+.Nameblock {
+	border-bottom: 1px solid #f4f6f9;
+	padding: 15px 0px;
+}
+
+.Contact {
+	
+	
+}
+
+#Email, #Phone {
+	padding-top: 25px;
+	
+}
+
+.navmenu {
+	border-bottom: 1px solid #f4f6f9;
+	padding: 15px 0px;
+}
+.navmenu a {
+	  text-decoration: none;
+	  color: #000;
+	  padding: 5px 20px;
+
+}
+
+.navmenutittle {
+	border-bottom: 1px solid #f4f6f9;
+	
+	  color: #000;
+	  padding: 0px 20px;
+	  font-size: 30px;
+	  font-weight: bold;
+	  padding: 15px 0px;
+}
+
+.active {
+	border-bottom: 4px solid #21c87a;
+	
+}
+
+
+.recordsp, .otherp {
+	display: none;
+}
+	.morep, .recordsp, .otherp {
+	padding: 15px 0px;
+	}
