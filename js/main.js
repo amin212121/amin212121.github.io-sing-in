@@ -4,6 +4,8 @@ $( ".email" ).click(function() {
 
  $( ".email" ).focus();
  
+ $( "#toast" ).css('display', 'none');
+ 
  $( ".email" ).addClass('focusinput');
  
   
@@ -14,6 +16,13 @@ $( ".email" ).click(function() {
   
   
 });
+
+$( ".closebut" ).click(function() {
+ $( "#toast" ).css('display', 'none');
+ $( "#toastpass" ).css('display', 'none');
+});
+
+
 
 $( ".name" ).click(function() {
 
@@ -32,7 +41,7 @@ $( ".name" ).click(function() {
  $( ".pass" ).click(function() {
 
  $( ".pass" ).focus();
-
+ $( "#toastpass" ).css('display', 'none');
 
  $( ".pass" ).addClass('focusinput')
   $( ".pass" ).focusout(function() {
@@ -99,8 +108,21 @@ let i = -1;
  
  $( "#next" ).click(function() {
 	 
-	 i = i+1;
-	 
+	 let reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,10})$/;
+	let address = $( "#email" ).val();
+	let passsym = $( "#pass" ).val().length;
+	
+	if(reg.test(address) === false) {
+      $('#toast').css('display', 'block')
+      
+   } else if (passsym<6){
+	   $('#toastpass').css('display', 'block')
+   }
+   
+   
+   else {
+ i = i+1;
+
 	 $( ".card-body" ).children().eq(i).next().css('display', 'none');
 	 $( ".card-body" ).children().eq(i+1).next().css('display', 'block');
 	  
@@ -116,6 +138,11 @@ if (i===1)
 };
 
  $("#back").css('display', 'block');
+
+ 
+   }
+   
+
 	 
  });
  
@@ -166,11 +193,17 @@ let serialObj = JSON.stringify(user); //сериализуем его
 
 
 
-
+$( "#name" ).keyup(function() {
+ let sumvalue = $( "#name" ).val().length;
+$( "#countsum" ).text(50-sumvalue);
+});
  
+ $( "#surname" ).keyup(function() {
+ let sumvalue = $( "#surname" ).val().length;
+$( "#countsums" ).text(50-sumvalue);
+});
 
 
- 
 
   
   

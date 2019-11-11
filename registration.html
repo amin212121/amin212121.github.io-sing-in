@@ -25,33 +25,36 @@
 	   <div class = "logotype">
    <img src="img/logo-dark.svg" width="151" height="36.362" class="d-inline-block align-top" alt="Logo"> 
    </div>
-   
+   <form>
   <div class="card-body">
     <h3 class="card-title">Створіть свій профіль:</h3>
 	
 	  <div class ="page1">
 	<div class = "email">
 	<img src="img/email_socialnetwork_20049.png"> 
-   <input id = "email" maxlength="50" name="email"  spellcheck="true"  placeholder="Електроний адрес" type="text" value="">
+   <input id = "email" maxlength="300" name="email"  spellcheck="true"  placeholder="Електроний адрес" type="email" required value="">
    </div>
-   
+
    <div class = "pass">
 	<img src="img/locked_22011.png"> 
 	<input id = "pass" maxlength="50" name="pass" spellcheck="true" type="password" placeholder="Пароль" value="">   
 	  </div>
 	   </div>
+	   
 	  
 	  <div class ="page2">
 	  <div class = "name">
 	<img src="img/user_add_21977.png"> 
    <input id = "name" maxlength="50" name="name"  spellcheck="true"  placeholder="Ім'я" type="text" value="">
+   <div id ="countsum"> </div> 
    </div>
   
    
      
    <div class = "surname">
 	<img src="img/users_21945.png"> 
-	<input id = "surname" maxlength="50" name="surname" spellcheck="true" type="text" placeholder="Прізвище" value="">   
+	<input id = "surname" maxlength="50" name="surname" spellcheck="true" type="text" placeholder="Прізвище" value="">  
+<div id ="countsums"> </div> 	
 	  </div>
 	   </div>
 	  <div class ="page3">
@@ -62,29 +65,31 @@
 
 	  <div class = "telephon">
 	<img src="img/Untitled-1-07_icon-icons.com_75118.png"> 
-	<input id = "telephon" maxlength="50" name="telephon" spellcheck="true" type="text" placeholder="Номер телефону" value="">   
+	<input id = "telephon" maxlength="50" name="telephon" spellcheck="true" type="tel"  placeholder="Номер телефону" value="+380" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>   
 	  </div>
 	    <div class = "biog">
 	<img src="img/user_man_info_21954.png"> 
-	<input id = "biog" maxlength="50" name="biog" spellcheck="true" type="textarea" placeholder="Коротко про себе" value="">   
+	<input id = "biog" maxlength="500" name="biog" spellcheck="true" type="text" placeholder="Коротко про себе" value="">   
 	  </div>
 	   </div>
-	  
+	   <div id = "toastpass"><div class="closebut">x</div> Увага! Пароль повинен містити <span>не менше 6-ти<span> символів. </div>
+	  <div id = "toast"><div class="closebut">x</div> Увага! Ви ввели <span>некоректний Email-адрес</span>. <p>Адрес повинен бути у форматі <u>example@adress.cc</u> </p></div>
+	   
 	  <a id="back" href="#" class="btn btn-primary">Назад</a> 
     <a id="next" href="#" class="btn btn-primary">Далі</a>
 	<a id="ready" href="userpage.html"  class="btn btn-primary" onclick="getValue()">Готово</a>
 	
 
 </div>
+</form>
     </div>
    
   </div>
 </div>
-    <div id = "hello"></div>
 
+ </div>
   
-  
-  
+
   
 
   
