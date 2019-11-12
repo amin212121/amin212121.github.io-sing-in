@@ -8,15 +8,13 @@ body {
 font-size: 24px;	
 }
 
-.col-4, .col-8 {
+.col-lg-4 {
 	border-right: 1px solid #e8e8e8;
 }
-.col-4 {
-border-left: 1px solid #e8e8e8;
-}
+
 .row {
-	border-top: 1px solid #e8e8e8;
-	border-bottom: 1px solid #e8e8e8;
+	border: 1px solid #e8e8e8;
+
 	margin: 45px 0px 0px 0px;
 }
 
@@ -58,7 +56,7 @@ border-left: 1px solid #e8e8e8;
 	  padding: 0px 20px;
 	  font-size: 30px;
 	  font-weight: bold;
-	  padding: 15px 0px;
+	  padding: 15px 20px;
 }
 
 .active {
@@ -71,5 +69,28 @@ border-left: 1px solid #e8e8e8;
 	display: none;
 }
 	.morep, .recordsp, .otherp {
-	padding: 15px 0px;
+	padding: 15px 20px;
 	}
+	
+	@media only screen and (max-width: 993px) {
+	img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+	    height: auto;
+}
+	
+	.col-xs-2 {
+		border-bottom: 1px solid #e8e8e8;
+	}
+	
+	.navmenutittle {
+		display: none;
+	}
+	
+	.active {
+    border-bottom: 0px solid #21c87a;
+	color: #21c87a!important;
+	}
+	}
+	

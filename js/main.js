@@ -205,6 +205,18 @@ $( "#countsums" ).text(50-sumvalue);
 
 
 
+$("#telephon").keypress(function(event){
+  event = event || window.event;
+  if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57) || event.charCode === 46 || event.charCode === 47 )
+    return false;
+});
+
+
+ $( "#biog" ).keyup(function() {
+ let sumvalue = $( "#biog" ).val().length;
+$( "#countsumb" ).text(200-sumvalue);
+});
+
   
   
 
