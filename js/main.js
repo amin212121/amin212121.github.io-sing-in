@@ -133,8 +133,21 @@ if (i===1)
 	  $(".card-title").text('І на кінець розкажіть трохи про себе:');
 	  $("#next").css('display', 'none');
 	   $("#ready").css('display', 'block');
+	   $("#first").removeClass('activespan');
+	    $("#first2").removeClass('activespan');
+	   $("#first3").addClass('activespan');
+	    $("#first").css('padding', '0px 0px 2px 0px');
+	    $("#first2").css('padding', '0px 0px 2px 0px');
+		$("#first3").css('padding', '0px 0px 0px 0px');
+	   
 } else if (i===0) {
 	$(".card-title").text('Представтесь будь ласка:');
+	 $("#first").removeClass('activespan');
+	  $("#first3").removeClass('activespan');
+	  $("#first2").addClass('activespan');
+	  	    $("#first3").css('padding', '0px 0px 2px 0px');
+	    $("#first").css('padding', '0px 0px 2px 0px');
+		$("#first2").css('padding', '0px 0px 0px 0px');
 };
 
  $("#back").css('display', 'block');
@@ -161,10 +174,24 @@ if (i===1)
 	  $(".card-title").text('Створіть свій профіль:');
 	  $("#next").css('display', 'block');
 	   $("#ready").css('display', 'none');
+	   $("#first2").removeClass('activespan');
+	  $("#first3").removeClass('activespan');
+	  $("#first").addClass('activespan');
+	  
+	    $("#first").css('padding', '0px 0px 0px 0px');
+	    $("#first2").css('padding', '0px 0px 2px 0px');
+		$("#first3").css('padding', '0px 0px 2px 0px');
+	  
 } else if (i===0) {
 	$(".card-title").text('Представтесь будь ласка:');
 	$("#next").css('display', 'block');
 	   $("#ready").css('display', 'none');
+	   $("#first").removeClass('activespan');
+	  $("#first3").removeClass('activespan');
+	  $("#first2").addClass('activespan');
+	    $("#first").css('padding', '0px 0px 2px 0px');
+	    $("#first3").css('padding', '0px 0px 2px 0px');
+		$("#first2").css('padding', '0px 0px 0px 0px');
 };
 
 
@@ -215,6 +242,15 @@ $("#telephon").keypress(function(event){
  $( "#biog" ).keyup(function() {
  let sumvalue = $( "#biog" ).val().length;
 $( "#countsumb" ).text(200-sumvalue);
+});
+
+$(document).keypress(function(event){
+  event = event || window.event;
+  if (event.charCode===13) {
+    $("#next").click();
+	$("#ready").click();
+	
+  }
 });
 
   

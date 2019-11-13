@@ -118,7 +118,7 @@ border-right: 1px solid #f4f6f9;
 	float: right;
 	border-radius: 20px;
 	padding: .375rem 1.75rem;
-    margin: 10px 0px;
+    margin: 30px 0px;
 }
 
 /* ДЛЯ JQUERY */
@@ -347,4 +347,38 @@ animation-name: angry-animation;
 }
 #toastpass span {
 	color: red;
+}
+
+.indicators {
+	position: absolute;
+    bottom: 0px;
+	left: 50%;
+	padding: 0px 0px;
+	
+}
+.indicators > div {
+	display: flex;
+	align-items: center;
+}
+
+#first, #first2, #first3 {
+	display: block;
+	
+}
+
+
+
+#first2, #first3 {
+	padding: 0px 0px 2px 0px;
+}
+
+.activespan {
+	color: #000;
+	font-weight: bold;
+    
+}
+.indicators span {
+	font-size: 50px;
+}
+
 }
