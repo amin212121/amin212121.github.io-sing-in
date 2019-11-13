@@ -159,7 +159,23 @@ if (i===1)
 	 
  });
  
+$( "#ready" ).click(function() {
+window.open("userpage.html","_self");
+getValue();
 
+})
+
+
+$(document).keypress(function(event){
+  event = event || window.event;
+  if (event.charCode===13) {
+	  if (i===1) {
+	$("#ready").click();
+	} else {
+    $("#next").click();
+	}
+  }
+});
  
  
  $( "#back" ).click(function() {
@@ -244,14 +260,7 @@ $("#telephon").keypress(function(event){
 $( "#countsumb" ).text(200-sumvalue);
 });
 
-$(document).keypress(function(event){
-  event = event || window.event;
-  if (event.charCode===13) {
-    $("#next").click();
-	$("#ready").click();
-	
-  }
-});
+
 
   
   

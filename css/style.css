@@ -149,6 +149,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 #ready {
 display:none;
+color: #fff!important;
 }
 
 #countsum {
