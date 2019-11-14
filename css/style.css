@@ -353,8 +353,8 @@ animation-name: angry-animation;
 .indicators {
 	position: absolute;
     bottom: 0px;
-	left: 50%;
-	padding: 0px 0px;
+	left: 47%;
+	padding: 1px 0px;
 	
 }
 .indicators > div {

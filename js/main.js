@@ -167,12 +167,14 @@ getValue();
 
 
 $(document).keypress(function(event){
-  event = event || window.event;
+  
   if (event.charCode===13) {
 	  if (i===1) {
 	$("#ready").click();
 	} else {
+		
     $("#next").click();
+	
 	}
   }
 });
